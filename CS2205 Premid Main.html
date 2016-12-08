@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<link rel = "stylesheet" href="css/bootstrap.min.css">
+		<title>Sneakers - Athletic Shoes | Foot Locker</title>
 		<style>
 			.header{
 				background-color:#E71836;
@@ -14,12 +15,19 @@
 				background-color:black;
 			}
 			
+			.editBadge{
+				height: 30px;
+				border-radius: 30px;
+				width: 45px;
+			}
+
 			.navbar{
 				padding-top: .7em;
-				padding-left: 2em;
+				background-color: black;
 			}
 			
 			.search{
+				padding:0px;
 				width:160px;
 				text-align: left !important;
 				border-radius: 30px;
@@ -31,6 +39,10 @@
 				color: white;
 			}
 			
+			.navlogo{
+				width: 120px;
+			}
+
 			.shop{
 				height: 30px;
 				width: 70px;
@@ -45,7 +57,25 @@
 			.shop:hover{
 				border-radius: 0px !important;
 			}
-			
+
+			.navlow{
+				font-family: Impact;
+			}
+
+			.selectedTab{
+				background-color: black !important;
+				color: white !important;
+			}
+
+			.img{
+				width: 866px;
+			}
+
+			.tabs{
+				border-radius: 0px !important;
+				padding-left:1px;
+				padding-right:1px;
+			}
 		</style>
 	</head>
 
@@ -57,23 +87,35 @@
 			</span>
 		</div>			
 	</div>
-
+	<div class = "container-fluid text-center">
 		<div class = "row navbar">
 			<div class = "col-md-12">
-					<button type = "button" class = "btn btn-default search img-rounded"><span class = "glyphicon glyphicon-search"></span> &nbsp;&nbsp;Search </button>
+					<button type = "button" class = "btn btn-default search img-rounded"><span class = "badge editBadge"><span class = "glyphicon glyphicon-search"></span></span> &nbsp;&nbsp;Search </button>
 					<a href = "#" class = "btn btn-link navelem" role="button"> SHOP </a>
 					<a href = "#" class = "btn btn-link navelem" role="button"> RELEASES </a>
 					<a href = "#" class = "btn btn-link navelem" role="button"> STORES </a>
-					<a href = "#" class = "btn"> <img src = "logo.png"> </a>
+					<a href = "#" class = "btn"> <img src = "logo.png" class = "navlogo"> </a>
 					<a href = "#" class = "btn btn-link navelem" role="button"> #APPROVED </a>
 					<a href = "#" class = "btn btn-link navelem" role="button"> LOG IN/REGISTER </a>
 					<a href = "#" class = "btn btn-link navelem" role="button"> HELP </a>
 					<button type = "button" class = "btn btn-danger shop"><span class = "glyphicon glyphicon-shopping-cart"></span> &nbsp;0 </button>
 			</div>
 		</div>	
-	<div class = "container">
-		
-	
+	</div>
+	<div class = "container-fluid text-center">
+		<div class = "row">
+			<div class = "col-md-10 col-md-offset-1">
+				<a href = "#"><img src = "shoeStatic.png" class = "img"></a>
+					<ul class="nav nav-pills navlow">
+					  <li role="presentation" class="active selectedTab tabs"><a href="#">TUBULAR SHADOW KNIT</a></li>
+					  <li role="presentation" class= "tabs"><a href="#">NIKE ROSHE ONE</a></li>
+					  <li role="presentation" class= "tabs"><a href="#">COME OUT OF NOWHERE</a></li>
+					  <li role="presentation" class= "tabs"><a href="#">NIKE KD 9</a></li>
+					  <li role="presentation" class= "tabs"><a href="#">JORDAN SPACE JAM</a></li>
+					  <li role="presentation" class= "tabs"><a href="#">GIFT GUIDE</a></li>
+					</ul>
+			</div>
+		</div>
 	</body>
 
 </html>
