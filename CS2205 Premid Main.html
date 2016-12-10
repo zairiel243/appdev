@@ -14,11 +14,13 @@
 			body{
 				background-color:black;
 			}
-			
+
 			.editBadge{
+				margin-left: -2px;
 				height: 30px;
 				border-radius: 30px;
-				width: 45px;
+				width: 40px;
+				background-color:#E71836 !important;
 			}
 
 			.navbar{
@@ -27,20 +29,28 @@
 			}
 			
 			.search{
-				padding:0px;
-				width:160px;
+				padding: 0px 0px !important;
 				text-align: left !important;
+				width:160px;
+				height: 28px;
 				border-radius: 30px;
+				font-family: 'Impact';
+			}
+
+			.glyphicon-search{
+				padding-top: 4px;
 			}
 			
 			.navelem{
-				padding-left: 2.5em;
+				padding-left: 0.8em;
 				font-family: Impact;
 				color: white;
 			}
-			
+
 			.navlogo{
 				width: 120px;
+				margin-left:90px;
+				margin-right:90px;
 			}
 
 			.shop{
@@ -73,8 +83,44 @@
 
 			.tabs{
 				border-radius: 0px !important;
-				padding-left:1px;
+				padding-left:0px;
 				padding-right:1px;
+			}
+
+			.shoes{
+				width:420px;
+			}
+
+			.rightShoe{
+				padding-top: 5px !important;
+				padding-right: 0px !important;
+			}
+
+			.leftShoe{
+				padding-top: 5px !important;
+				padding-left: 0px !important;
+			}
+
+			.shopButton{
+				text-align: left !important;
+				border-radius: 0px !important;
+				border: 0px !important;
+				font-family: 'Impact';
+				font-size: 20px;
+				text-transform: uppercase !important;
+				color: #a4a4a4;
+				background-color: #494949;
+				width:420px;
+			}
+
+			.shoes:hover + .shopButton{
+				color: white;
+				background-color: #E71836;
+			}
+
+			.shopButton:hover{
+				color: white;
+				background-color: #E71836;
 			}
 		</style>
 	</head>
@@ -87,10 +133,11 @@
 			</span>
 		</div>			
 	</div>
+	<!-- Nav Bar Start -->
 	<div class = "container-fluid text-center">
 		<div class = "row navbar">
 			<div class = "col-md-12">
-					<button type = "button" class = "btn btn-default search img-rounded"><span class = "badge editBadge"><span class = "glyphicon glyphicon-search"></span></span> &nbsp;&nbsp;Search </button>
+					<button type = "button" class = "btn btn-default search"><span class = "badge editBadge"><span class = "glyphicon glyphicon-search"></span></span> &nbsp;&nbsp;SEARCH </button>
 					<a href = "#" class = "btn btn-link navelem" role="button"> SHOP </a>
 					<a href = "#" class = "btn btn-link navelem" role="button"> RELEASES </a>
 					<a href = "#" class = "btn btn-link navelem" role="button"> STORES </a>
@@ -102,6 +149,9 @@
 			</div>
 		</div>	
 	</div>
+	<!-- Nav Bar End -->
+
+	<!-- Static Slider Start -->
 	<div class = "container-fluid text-center">
 		<div class = "row">
 			<div class = "col-md-10 col-md-offset-1">
@@ -116,6 +166,48 @@
 					</ul>
 			</div>
 		</div>
+	<!-- Static Slider End -->
+		<div class = "container-fluid">	
+			<div class = "row text-center">
+				<div class = "col-md-5 col-md-offset-1 leftShoe">
+					<a href = "#"><img src = "img1.jpg" alt = "Jordan Shoes" class = "shoes"></a>
+					<a class="btn btn-default shopButton" href="#" role="button">jordan shoes</a>
+				</div>
+				<div class = "col-md-5 rightShoe">
+					<a href = "#"><img src = "img2.jpg" alt = "Adidas Tubular Strap" class = "shoes"></a>
+					<a class="btn btn-default shopButton" href="#" role="button">Adidas Tubular Strap</a>
+				</div>
+
+				<div class = "col-md-5 col-md-offset-1 leftShoe">
+					<a href = "#"><img src = "img3.jpg" alt = "Nike Windrunner Jackets" class = "shoes"></a>
+					<a class="btn btn-default shopButton" href="#" role="button">Nike Windrunner Jackets</a>
+				</div>
+				<div class = "col-md-5 rightShoe">
+					<a href = "#"><img src = "img4.jpg" alt = "Adidas Original Clothing" class = "shoes"></a>
+					<a class="btn btn-default shopButton" href="#" role="button">Adidas Original Clothing</a>
+				</div>
+
+				<div class = "col-md-5 col-md-offset-1 leftShoe">
+					<a href = "#"><img src = "img5.jpg" alt = "Jordan Future Boots" class = "shoes"></a>
+					<a class="btn btn-default shopButton" href="#" role="button">Jordan Future Boots</a>
+				</div>
+
+				<div class = "col-md-5 rightShoe">
+					<a href = "#"><img src = "img6.jpg" alt = "Nike Air Presto" class = "shoes"></a>
+					<a class="btn btn-default shopButton" href="#" role="button">Nike Air Presto</a>
+				</div>
+
+				<div class = "col-md-5 col-md-offset-1 leftShoe">
+					<a href = "#"><img src = "img7.jpg" alt = "Timberland" class = "shoes"></a>
+					<a class="btn btn-default shopButton" href="#" role="button">Timberland</a>
+				</div>
+				<div class = "col-md-5 rightShoe">
+					<a href = "#"><img src = "img8.jpg" alt = "Puma Suede" class = "shoes"></a>
+					<a class="btn btn-default shopButton" href="#" role="button">Puma Suede</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	</body>
 
 </html>
