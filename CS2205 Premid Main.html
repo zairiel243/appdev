@@ -81,10 +81,19 @@
 				width: 866px;
 			}
 
-			.tabs{
+			.nav>li>a{
 				border-radius: 0px !important;
-				padding-left:0px;
-				padding-right:1px;
+				width:142.71px;
+				height: 40px;
+				text-align: center;
+				background-color: rgb(73,73,73);
+				font-size: 10px;
+				color: rgb(140,140,140);
+			}
+
+			.nav>li>a:hover{
+				color: white;
+				background-color:rgb(32,32,32);
 			}
 
 			.shoes{
@@ -122,12 +131,59 @@
 				color: white;
 				background-color: #E71836;
 			}
+
+			#imgBig{
+				width: 870px;
+				padding-top: 5px;
+			}
+
+			.imgBotm{
+				padding-top: 5px;
+				padding-left: 35px;
+			}
+
+			#jumboImg{
+				width:866px;
+			}
+
+			/*Table Start*/
+			.divTable{
+				display: table;
+				width: 100%;
+			}
+			.divTableRow {
+				display: table-row;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+			}
+			.divTableCell, .divTableHead {
+				border: 1px solid #999999;
+				display: table-cell;
+				padding: 3px 10px;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+				font-weight: bold;
+			}
+			.divTableFoot {
+				background-color: #EEE;
+				display: table-footer-group;
+				font-weight: bold;
+			}
+			.divTableBody {
+				display: table-row-group;
+			}
+			/*Table End*/
+
 		</style>
 	</head>
 
 	<body>
-	<div class = "row text-center header">
-		<div class = "col-md-12">
+	<div class = "row header">
+		<div class = "col-md-12 text-center">
 			<span>	
 				<h5>Free shipping on regular priced items and orders over $75. Use Code IPFL2R52. <span class = "glyphicon glyphicon-ok"></span></h5>
 			</span>
@@ -154,10 +210,10 @@
 	<!-- Static Slider Start -->
 	<div class = "container-fluid text-center">
 		<div class = "row">
-			<div class = "col-md-10 col-md-offset-1">
+			<div class = "col-md-10 col-md-offset-1 text-center">
 				<a href = "#"><img src = "shoeStatic.png" class = "img"></a>
 					<ul class="nav nav-pills navlow">
-					  <li role="presentation" class="active selectedTab tabs"><a href="#">TUBULAR SHADOW KNIT</a></li>
+					  <li role="presentation" class= "tabs"><a href="#">TUBULAR SHADOW KNIT</a></li>
 					  <li role="presentation" class= "tabs"><a href="#">NIKE ROSHE ONE</a></li>
 					  <li role="presentation" class= "tabs"><a href="#">COME OUT OF NOWHERE</a></li>
 					  <li role="presentation" class= "tabs"><a href="#">NIKE KD 9</a></li>
@@ -207,6 +263,89 @@
 				</div>
 			</div>
 		</div>
+		<div class = "container">
+			<div class = "row text-center">
+				<a href = "#"><img src = "img9.jpg" alt = "Foot Locker - Come out of nowhere" id = "imgBig"></a>
+				<div class = "col-md-4 ">
+					<a href = "#"><img src = "img11.jpg" alt = "Foot Locker - VIP" class = "imgBotm"></a>
+				</div>
+				<div class = "col-md-3 ">
+					<a href = "#"><img src = "img10.jpg" alt = "Foot Locker - VIP" class = "imgBotm"></a>
+				</div>
+				<div class = "col-md-3 ">
+					<a href = "#"><img src = "img12.jpg" alt = "Foot Locker - VIP" class = "imgBotm"></a>
+				</div>
+				<div class = "col-md-12">
+					<a href = "#"><img src = "img13.png" alt = "Foot Locker - Jumbotron Sign-up" id = "jumboImg"></a>
+				</div>
+			</div>
+		</div>
+<!-- Table Start -->
+<div class="divTable" style="width: 870px;">
+<div class="divTableBody">
+<div class="divTableRow">
+<div class="divTableCell">STAY CONNECT&nbsp;</div>
+<div class="divTableCell">INFO&nbsp;</div>
+<div class="divTableCell">CUSTOMER SERVICE&nbsp;</div>
+<div class="divTableCell">QUICK LINKS&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">About Us&nbsp;</div>
+<div class="divTableCell">Contact Us&nbsp;</div>
+<div class="divTableCell">Store Locator&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">LIVE CHAT&nbsp;</div>
+<div class="divTableCell">Sitemap&nbsp;</div>
+<div class="divTableCell">My Account Help&nbsp;</div>
+<div class="divTableCell">Gift Cards&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">Service Available: Sun - Sat 8am - 11pm CT.&nbsp;</div>
+<div class="divTableCell">Career Opportunities</div>
+<div class="divTableCell">&nbsp;Shipping Information</div>
+<div class="divTableCell">&nbsp;Wishlist</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;Affiliates</div>
+<div class="divTableCell">&nbsp;Ordering Help</div>
+<div class="divTableCell">&nbsp;Sizing Guide</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;Foot Locker, Inc.</div>
+<div class="divTableCell">&nbsp;Returns &amp; Exchanges</div>
+<div class="divTableCell">&nbsp;Email Sign Up</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;Ad Choices</div>
+<div class="divTableCell">&nbsp;VIP</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;Privacy Statement</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;Terms and Conditions</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;1-800-991-6815</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+</div>
+</div>
+<!-- DivTable.com -->
 	</div>
 	</body>
 
